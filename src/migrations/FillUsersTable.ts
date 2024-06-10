@@ -3,7 +3,7 @@ import {pool} from '../db';// импортируем файл db.js
 
 export class FillUsersTable implements MigrationInterface {
   public async up(): Promise<void> {
-    const totalUsers = 100;
+    const totalUsers = 1000001;
     const genders = ['male', 'female'];
 
     for (let i = 0; i < totalUsers; i++) {
